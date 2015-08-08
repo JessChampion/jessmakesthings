@@ -1,21 +1,21 @@
 /*
 Error: File to import not found or unreadable: ../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss.
-        on line 9 of main.scss
+        on line 11 of main.scss
 
-4: $title-text-main: #cfcfcf;
-5: $title-text-emp: #ffffff;
 6: 
 7: $offWhite: #fdfdfd;
-8: 
-9: @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+8: $offWhiteTranslucent: #888887;
+9: 
 10: 
-11: .browsehappy {
-12:   margin: 0.2em 0;
-13:   background: #ccc;
-14:   color: #000;
+11: @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+12: 
+13: .browsehappy {
+14:   margin: 0.2em 0;
+15:   background: #ccc;
+16:   color: #000;
 
 Backtrace:
-main.scss:9
+main.scss:11
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:45:in `import'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -58,4 +58,4 @@ main.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss.\A         on line 9 of main.scss\A \A 4: $title-text-main: #cfcfcf;\A 5: $title-text-emp: #ffffff;\A 6: \A 7: $offWhite: #fdfdfd;\A 8: \A 9: @import \"../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss\";\A 10: \A 11: .browsehappy {\A 12:   margin: 0.2em 0;\A 13:   background: #ccc;\A 14:   color: #000;"; }
+  content: "Error: File to import not found or unreadable: ../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss.\A         on line 11 of main.scss\A \A 6: \A 7: $offWhite: #fdfdfd;\A 8: $offWhiteTranslucent: #888887;\A 9: \A 10: \A 11: @import \"../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss\";\A 12: \A 13: .browsehappy {\A 14:   margin: 0.2em 0;\A 15:   background: #ccc;\A 16:   color: #000;"; }
