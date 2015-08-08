@@ -19,16 +19,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="header row">
-        <div class="col-sm-3 col-xs-12 title">
-          <h1 class="logo">
-              <span class="jess">Jess</span>
-              <span class="makes">makes</span>
-              <span class="things">things</span>
-          </h1>
-        </div>
-        <div class="col-sm-9"></div>
-    </div>
+    <div class="header row" ng-include="'views/header.html'" ></div>
     <div class="row main">
     <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
     </div>
@@ -62,6 +53,8 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/services/tumblrservice.js"></script>
+        <script src="scripts/controllers/posts.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -2,12 +2,13 @@
 
 </div>
 <div class="col-md-8 col-sm-9 col-xs-12 content">
-    <div class="row posts">
+    <div class="row posts" ng-controller="PostsCtrl">
         <div class="post">
             Post 1
+            {{postCtrl.blog}}
         </div>
         <div class="post">
-            Post 2
+            {{postCtrl.posts}}
         </div>
     </div>
 </div>
