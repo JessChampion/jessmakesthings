@@ -235,10 +235,17 @@ body {
     position: relative;
     padding-top: 65px;
   }
-
   .content{
     position: relative;
     padding: 0 15px;
+  }
+
+  .slide-modal {
+    .modal-wrapper {
+      height: calc(100% - 55px);
+      margin: 55px 0 0 5px;
+      padding: 0 0 15px;
+    }
   }
 }
 
