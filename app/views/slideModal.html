@@ -1,0 +1,18 @@
+<div class="slide-modal container closed">
+    <div class="col-md-2 col-sm-3 hidden-xs left-bar"></div>
+    <div class="custom-modal-dialog col-md-10 col-sm-9 col-xs-12">
+        <div class="modal-content post-container">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="slideModal.close()" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <div ng-include="modalContent"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>

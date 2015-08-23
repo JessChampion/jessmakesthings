@@ -1,14 +1,16 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 $background: #777789;
 $bg-transparent: rgba(119,119,137,0);
+$modal-bg: #000;
+$modal-bg-transparent: rgba(0,0,0,0);
 $title-text-main: #cfcfcf;
 $title-text-emp: #ffffff;
 
 $offWhite: #fdfdfd;
-$offWhiteTranslucent: #888887;
-
+$offWhiteTranslucent: #9494A3;
 
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "posts.scss";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -117,41 +119,69 @@ body {
   padding: 0 30px 0px 50px;
 }
 
-.posts{
+.post-overlay{
 
 }
 
-.post-container{
-  padding: 0 5px 10px;
-  &.placeholder{
-    .post-icon{
-      background-color: $offWhiteTranslucent;
-      border-color: $offWhiteTranslucent;
-    }
+.slide-modal{
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 0;
+  height: 100%;
+  margin-right: 0;
+  padding: 15px 0 15px;
+
+  &.open, &.closing{
+    display: block;
+  }
+
+  .custom-modal-dialog{
+    position: relative;
+    margin-right: 0;
+    padding-right: 0;
+    height: 100%;
+  }
+
+  .modal-content{
+    margin-left: 40px;
+    border-radius: 4px 0 0 4px;
+    //box-shadow: 0 2px 2px rgba(0,0,0,0.5);
   }
 }
 
-.post,.post-icon{
-  border-radius: 4px;
-  border: 15px solid $offWhite;
-  background: $offWhite top no-repeat;
-  background-size: 100% auto;
-
+.slide-modal.open .custom-modal-dialog {
+  animation-name: slide-from-right;
+  animation-duration: 800ms;
+  animation-timing-function:ease-out;
 }
 
-.post-icon{
-  position: relative;
-  width: 100%;
-  max-height: 100%;
-  overflow: hidden;
-  &:before{
-    content:"";
-    display:block;
-    margin-top: 98%;
-  }
+.slide-modal.closing .custom-modal-dialog {
+  animation-name: slide-to-right;
+  animation-duration: 800ms;
+  animation-timing-function:ease-out;
 }
 
+@keyframes slide-from-right {
+  from {transform: translate3d(100%, 0, 0);}
+  to {transform: translate3d(0, 0, 0);}
+}
 
+@keyframes slide-to-right {
+  from {transform: translate3d(0, 0, 0);}
+  to {transform: translate3d(100%, 0, 0);}
+}
+
+@keyframes slow-fade {
+  0% {display: block !important;}
+  99% {display: block !important;}
+  100% {display: none !important;}
+}
+
+.modal-backdrop.slide-modal-backdrop{
+  background: none;
+}
 
 @media screen and (max-width: 768px) {
   .header{
@@ -187,22 +217,15 @@ body {
     }
   }
   .main{
+    position: relative;
     padding-top: 65px;
   }
 
   .content{
+    position: relative;
     padding: 0 15px;
   }
-
-
-  .posts{
-    padding: 0 25px;
-  }
-
-  .post {
-  }
 }
-
 
 @media screen and (max-width: 565px) {
   .header{
@@ -227,4 +250,13 @@ body {
   .main{
     padding-top: 60px;
   }
+}
+
+@media screen and (max-width: 420px) {
+ .header {
+   h1 {
+     width: calc(100% + 10px);
+     margin: 0 -11px;
+   }
+ }
 }

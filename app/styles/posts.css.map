@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,oCAAqC;EACnC,MAAM;IACJ,OAAO,EAAE,MAAM",
+"sources": ["posts.scss"],
+"names": [],
+"file": "posts.css"
+}
