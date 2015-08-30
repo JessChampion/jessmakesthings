@@ -13,19 +13,21 @@ angular.module('jessMakesThingsApp')
         $scope.postCtrl.posts = {};
         $scope.postCtrl.placeholders = [];
 
-        $scope.postCtrl.postIconClicked = function(){
-            $rootScope.$broadcast('openPost');
+        $scope.postCtrl.postIconClicked = function(post){
+            $rootScope.$broadcast('openModal', {content:post});
         }
 
         tumblrService.getPosts().then(function(data){
-            $scope.postCtrl.blog = data.response.blog;
-            $scope.postCtrl.posts = data.response.posts;
-            //extract images
-            angular.forEach($scope.postCtrl.posts,function(value){
-                if(value.photos=== undefined){
-                    findImages(value);
-                }
-            });
+            //$scope.postCtrl.blog = data.response.blog;
+            //$scope.postCtrl.posts = data.response.posts;
+            ////extract images
+            //angular.forEach($scope.postCtrl.posts,function(value){
+            //    if(value.photos=== undefined){
+            //        findImages(value);
+            //    }
+            //});
+
+            $scope.postCtrl.posts = data.posts;
             //create placeholders
             for(var x=0; x<=($scope.postCtrl.posts.length % 3); x++){
                 $scope.postCtrl.placeholders.push(x);

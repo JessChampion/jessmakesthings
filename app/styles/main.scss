@@ -135,6 +135,7 @@ body {
   }
 
   .modal-wrapper{
+    position: relative;
     height: 100%;
     margin-left: 40px;
     padding: 15px 0;
@@ -148,24 +149,28 @@ body {
     height: 100%;
   }
 
+  .close{
+    float: none;
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    z-index: 100;
+    .glyphicon{
+      font-size: 20px;
+      font-weight: normal;
+      &:last-child{
+        position: relative;
+        left:-16px;
+      }
+    }
+  }
+
   .modal-content{
     position: relative;
     border-radius: 4px 0 0 4px;
     overflow-y: scroll;
-    .close{
-      float: none;
-      position: absolute;
-      left: 10px;
-      top: 15px;
-      .glyphicon{
-        font-size: 20px;
-        font-weight: normal;
-        &:last-child{
-          position: relative;
-          left:-16px;
-        }
-      }
-    }
+    background: $offWhite;
+
     .modal-title{
       display: inline-block;
     }

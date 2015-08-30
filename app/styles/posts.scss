@@ -17,6 +17,9 @@
   background: $offWhite center no-repeat;
   background-size: contain;
   overflow: hidden;
+  &.landscape{
+
+  }
   &:before{
     content:"";
     display:block;
@@ -38,7 +41,17 @@
   padding-left: 47px;
   padding-right: 0;
   margin-bottom: 15px;
+}
 
+.post-header{
+  padding: 15px 28px 0;
+  height: 45px;
+  .post-title{
+    position: absolute;
+    top: 14px;
+    font-size: 28px;
+    z-index: 100;
+  }
 }
 
 .post{
@@ -46,6 +59,16 @@
   border-radius: 4px 0 0 4px;
   border: 15px solid $offWhite;
   background: $offWhite center no-repeat;
+
+  .title{
+    font-size: 24px;
+  }
+
+  .post-image{
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+  }
 
 }
 

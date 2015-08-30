@@ -17,9 +17,8 @@ angular.module('jessMakesThingsApp')
         controller: function ($scope, $timeout) {
             $scope.slideModal = {};
             $scope.slideModal.isOpen = false;
-
+            $scope.slideModal.content = null;
             function open() {
-                angular.element(document.body).append($scope.slideModal.backdrop);
                 $($scope.slideModal.element).removeClass('closed').addClass('open');
             }
 
@@ -28,23 +27,21 @@ angular.module('jessMakesThingsApp')
                 $($scope.slideModal.element).removeClass('open').addClass('closing');
                 $timeout(function () {
                     $($scope.slideModal.element).removeClass('closing').addClass('closed');
-                    $scope.slideModal.backdrop.remove();
+                    $scope.slideModal.content = null;
                 }, 700);
             };
 
-            $scope.$on('openPost', function (event, args) {
+            $scope.$on('openModal', function (event, args) {
                 $scope.slideModal.isOpen = true;
+                $scope.slideModal.content = args.content;
                 open();
             });
 
         },
         link: function postLink(scope, element) {
             scope.slideModal.element = $('.slide-modal', element)[0];
-            //create backdrop element
-            scope.slideModal.backdrop = angular.element('<div class="modal-backdrop slide-modal-backdrop" ng-click="slideModal.close"></div>');
 
             //bind close events
-            $(scope.slideModal.backdrop).click(scope.slideModal.close);
             $(element).click(scope.slideModal.close);
 
             //prevent clicks inside the modal calling close
