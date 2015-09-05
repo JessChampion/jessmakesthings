@@ -1,6 +1,8 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-$background: #777789;
-$bg-transparent: rgba(119,119,137,0);
+//$background: #777789;
+$background: #53536b;
+//$bg-transparent: rgba(119,119,137,0);
+$bg-transparent: rgba(83,83,107,0);
 $modal-bg: #000;
 $modal-bg-transparent: rgba(0,0,0,0);
 $title-text-main: #cfcfcf;
@@ -8,6 +10,7 @@ $title-text-emp: #ffffff;
 
 $offWhite: #fdfdfd;
 $offWhiteTranslucent: #9494A3;
+$accent-grey: #e5e5e5;
 
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 @import "posts.scss";
@@ -246,10 +249,22 @@ body {
   }
 
   .slide-modal {
+    .post-header{
+      margin: 0 7px;
+      padding: 15px 8px 0;
+      height: 45px;
+    }
     .modal-wrapper {
       height: calc(100% - 55px);
       margin: 55px 0 0 5px;
       padding: 0 0 15px;
+    }
+    .modal-content {
+      padding-left: 30px;
+    }
+    .close{
+      left: 7px;
+      top: 20px;
     }
   }
 }

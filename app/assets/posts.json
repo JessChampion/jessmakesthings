@@ -3,7 +3,7 @@
     {
       "id": 60330642689,
       "type": "text",
-      "date": "2013-09-05 03:34:00 GMT",
+      "date": "2013",
       "timestamp": 1378352040,
       "tags": [
         "tech",
@@ -22,7 +22,7 @@
     {
       "id": 60323062510,
       "type": "text",
-      "date": "2013-09-05 02:09:00 GMT",
+      "date": "2012",
       "timestamp": 1378346940,
       "tags": [
         "tech",
@@ -40,7 +40,7 @@
     {
       "id": 60315518464,
       "type": "video",
-      "date": "2013-09-05 00:47:00 GMT",
+      "date": "2012",
       "timestamp": 1378342020,
       "tags": [
         "tech",
@@ -80,7 +80,7 @@
     {
       "id": 60257898036,
       "type": "text",
-      "date": "2013-09-04 09:55:00 GMT",
+      "date": "2011",
       "timestamp": 1378288500,
       "tags": [
         "tech",
@@ -97,7 +97,7 @@
     {
       "id": 60255058479,
       "type": "text",
-      "date": "2013-09-04 08:27:00 GMT",
+      "date": "2010 - 2011",
       "timestamp": 1378283220,
       "tags": [
         "tech",
@@ -114,7 +114,7 @@
     {
       "id": 60240329451,
       "type": "video",
-      "date": "2011-09-04 03:41:00 GMT",
+      "date": "2010 - 2011",
       "timestamp": 1378266060,
       "tags": [
         "tech",
@@ -124,26 +124,6 @@
       ],
       "title": "Imagine cup - Taiao",
       "content": "assets/posts/Taiao.html",
-      "permalink_url": "https://www.youtube.com/watch?v=MA0THGOETTE",
-      "html5_capable": true,
-      "thumbnail_url": "https://i.ytimg.com/vi/MA0THGOETTE/hqdefault.jpg",
-      "thumbnail_width": 480,
-      "thumbnail_height": 360,
-      "player": [
-        {
-          "width": 250,
-          "embed_code": "<iframe width=\"250\" height=\"187\"  id=\"youtube_iframe\" src=\"https://www.youtube.com/embed/MA0THGOETTE?feature=oembed&amp;enablejsapi=1&amp;origin=http://safe.txmblr.com&amp;wmode=opaque\" frameborder=\"0\" allowfullscreen></iframe>"
-        },
-        {
-          "width": 400,
-          "embed_code": "<iframe width=\"400\" height=\"300\"  id=\"youtube_iframe\" src=\"https://www.youtube.com/embed/MA0THGOETTE?feature=oembed&amp;enablejsapi=1&amp;origin=http://safe.txmblr.com&amp;wmode=opaque\" frameborder=\"0\" allowfullscreen></iframe>"
-        },
-        {
-          "width": 500,
-          "embed_code": "<iframe width=\"500\" height=\"375\"  id=\"youtube_iframe\" src=\"https://www.youtube.com/embed/MA0THGOETTE?feature=oembed&amp;enablejsapi=1&amp;origin=http://safe.txmblr.com&amp;wmode=opaque\" frameborder=\"0\" allowfullscreen></iframe>"
-        }
-      ],
-      "video_type": "youtube",
       "thumbnail":"assets/media/taiaoThumbnail.jpg",
       "thumbnailOrientation":"landscape"
     }

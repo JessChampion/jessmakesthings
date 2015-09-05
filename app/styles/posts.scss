@@ -52,16 +52,34 @@
     font-size: 28px;
     z-index: 100;
   }
+  .post-date{
+    float: right;
+    margin-top: -1px;
+    right:15px;
+    font-size: 28px;
+    z-index: 90;
+    color: $title-text-main;
+  }
 }
 
 .post{
   height: 100%;
+  padding-right: 0;
   border-radius: 4px 0 0 4px;
-  border: 15px solid $offWhite;
   background: $offWhite center no-repeat;
+
+  .post-body{
+    padding-right: 40px;
+    padding-bottom: 45px;
+  }
 
   .title{
     font-size: 24px;
+  }
+
+  .post-subtitle{
+    margin-top: 20px;
+    margin-bottom: 5px;
   }
 
   .post-image{
@@ -70,7 +88,35 @@
     z-index: 1000;
   }
 
+  .video-container, .picture-container{
+    width: 100%;
+    margin: 20px 0;
+    //text-align: center;
+    video,img{
+      width: 100%;
+      max-width: 600px;
+    }
+    &.xs{
+      video,img{
+        width: 100%;
+        max-width: 450px;
+      }
+    }
+    &.sm{
+      video,img{
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+    &.md{
+      video,img{
+        width: 100%;
+        max-width: 550px;
+      }
+    }
+  }
 }
+
 
 @media screen and (max-width: 768px) {
   .posts{

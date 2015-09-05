@@ -1,21 +1,21 @@
 /*
 Error: File to import not found or unreadable: ../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss.
-        on line 12 of main.scss
+        on line 15 of main.scss
 
-7: $title-text-emp: #ffffff;
-8: 
-9: $offWhite: #fdfdfd;
-10: $offWhiteTranslucent: #9494A3;
-11: 
-12: @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-13: @import "posts.scss";
+10: 
+11: $offWhite: #fdfdfd;
+12: $offWhiteTranslucent: #9494A3;
+13: $accent-grey: #e5e5e5;
 14: 
-15: .browsehappy {
-16:   margin: 0.2em 0;
-17:   background: #ccc;
+15: @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+16: @import "posts.scss";
+17: 
+18: .browsehappy {
+19:   margin: 0.2em 0;
+20:   background: #ccc;
 
 Backtrace:
-main.scss:12
+main.scss:15
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:45:in `import'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -58,4 +58,4 @@ main.scss:12
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss.\A         on line 12 of main.scss\A \A 7: $title-text-emp: #ffffff;\A 8: \A 9: $offWhite: #fdfdfd;\A 10: $offWhiteTranslucent: #9494A3;\A 11: \A 12: @import \"../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss\";\A 13: @import \"posts.scss\";\A 14: \A 15: .browsehappy {\A 16:   margin: 0.2em 0;\A 17:   background: #ccc;"; }
+  content: "Error: File to import not found or unreadable: ../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss.\A         on line 15 of main.scss\A \A 10: \A 11: $offWhite: #fdfdfd;\A 12: $offWhiteTranslucent: #9494A3;\A 13: $accent-grey: #e5e5e5;\A 14: \A 15: @import \"../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss\";\A 16: @import \"posts.scss\";\A 17: \A 18: .browsehappy {\A 19:   margin: 0.2em 0;\A 20:   background: #ccc;"; }

@@ -20,7 +20,7 @@
     <![endif]-->
 
     <div class="header row" ng-include="'views/header.html'" ></div>
-    <div  ng-controller="PostsCtrl">
+    <div ng-controller="PostsCtrl">
         <div class="row main">
             <div ng-include="'views/postIcons.html'"></div>
         </div>
@@ -56,10 +56,9 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/services/tumblrservice.js"></script>
+        <script src="scripts/services/contentservice.js"></script>
         <script src="scripts/controllers/posts.js"></script>
         <script src="scripts/directives/slidemodal.js"></script>
-        <script src="scripts/directives/contentinjector.js"></script>
         <!-- endbuild -->
 </body>
 </html>
